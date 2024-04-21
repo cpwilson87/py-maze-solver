@@ -11,7 +11,6 @@ class Line:
         self.end = end
 
     def draw(self, canvas: Canvas, fill_color: str):
-        print("drawing", self.start.x, self.start.y, self.end.x, self.end.y, fill_color)
         canvas.create_line(self.start.x, self.start.y, self.end.x, self.end.y, fill=fill_color, width=2)
         canvas.pack(fill=BOTH, expand=1)
 
